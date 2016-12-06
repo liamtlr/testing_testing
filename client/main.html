@@ -1,0 +1,36 @@
+<head>
+  <title>testing_testing</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> info}}
+
+  <form id="path_test" action="/names" method="post">
+  <input type="submit" value="Submit">
+  </form>
+
+  
+
+</body>
+
+
+<template name="hello">
+  <button id="count_button">Click Me</button>
+  <p id="count_outcome">You have pressed the button {{counter}} times.</p>
+  <button id="testy">Womp womp</button>
+</template>
+
+
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
